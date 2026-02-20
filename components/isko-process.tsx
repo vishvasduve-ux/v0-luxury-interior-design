@@ -35,17 +35,17 @@ export default function IskoProcess() {
     <section className="py-20 md:py-32 px-6 md:px-12 lg:px-20 bg-background">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-12 h-px bg-red-600" />
-            <span className="text-red-600 text-sm uppercase tracking-[0.3em] font-medium">Process</span>
-            <div className="w-12 h-px bg-red-600" />
+        <div className="text-center mb-20">
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div className="w-16 h-px bg-gradient-to-r from-transparent via-red-600 to-transparent" />
+            <span className="text-red-600 text-xs uppercase tracking-[0.25em] font-light">Process</span>
+            <div className="w-16 h-px bg-gradient-to-r from-transparent via-red-600 to-transparent" />
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground mb-6">
-            How It Works
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-foreground mb-6 font-light tracking-tight">
+            Our Design Journey
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Simple, transparent process from consultation to completion
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-light leading-relaxed">
+            Four seamless steps to transform your vision into reality
           </p>
         </div>
 
@@ -56,25 +56,25 @@ export default function IskoProcess() {
             {steps.map((step, index) => (
               <div key={index} className="relative">
                 {/* Card */}
-                <div className="p-8 bg-card rounded-2xl border border-border hover:border-red-600/50 transition-all duration-300 h-full flex flex-col">
+                <div className="group p-10 bg-card rounded-3xl border border-border/20 hover:border-red-600/30 transition-all duration-500 hover:-translate-y-2 h-full flex flex-col">
                   {/* Step Number */}
-                  <div className="text-5xl font-serif text-red-600/20 mb-4">{step.number}</div>
+                  <div className="text-6xl font-serif text-red-600/15 mb-6 group-hover:text-red-600/30 transition-colors font-light">{step.number}</div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-semibold text-foreground mb-3">{step.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-6 flex-grow">{step.description}</p>
+                  <h3 className="text-2xl font-serif text-foreground mb-4 group-hover:text-red-600 transition-colors font-light">{step.title}</h3>
+                  <p className="text-muted-foreground text-sm mb-8 flex-grow leading-relaxed font-light">{step.description}</p>
 
                   {/* Payment Info */}
-                  <div className="pt-6 border-t border-border">
-                    <p className="text-red-600 font-medium text-sm">{step.payment}</p>
+                  <div className="pt-6 border-t border-border/10 group-hover:border-red-600/20 transition-colors">
+                    <p className="text-red-600 text-sm font-light tracking-wide">{step.payment}</p>
                   </div>
                 </div>
 
                 {/* Arrow */}
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:flex absolute -right-4 top-1/2 transform -translate-y-1/2 z-10">
-                    <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
-                      <ArrowRight className="w-5 h-5 text-white" />
+                  <div className="hidden lg:flex absolute -right-5 top-1/2 transform -translate-y-1/2 z-10">
+                    <div className="w-10 h-10 bg-red-600/20 border border-red-600/30 rounded-full flex items-center justify-center hover:bg-red-600/40 transition-all">
+                      <ArrowRight className="w-5 h-5 text-red-600" />
                     </div>
                   </div>
                 )}
@@ -84,9 +84,9 @@ export default function IskoProcess() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-16">
-          <Button asChild className="bg-red-600 hover:bg-red-500 text-white px-8 py-6 text-lg">
-            <a href="#contact">Start Your Journey Today</a>
+        <div className="text-center mt-20">
+          <Button asChild className="bg-red-600 hover:bg-red-500 text-white px-12 py-4 text-lg font-light tracking-wide rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-red-600/20">
+            <a href="#contact">Begin Your Transformation</a>
           </Button>
         </div>
       </div>

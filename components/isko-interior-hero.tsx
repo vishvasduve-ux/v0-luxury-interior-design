@@ -32,15 +32,14 @@ export default function IskoInteriorHero() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white leading-tight mb-8">
-            Beautiful Interiors
-            <span className="block text-red-600">That Inspire</span>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-tight mb-8 tracking-tight">
+            Elevate Your
+            <span className="block text-red-600 font-light">Living Space</span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Premium interior design & execution for homes, offices, and commercial spaces. 
-            Quality craftsmanship meets creative vision.
+          <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed font-light tracking-wide">
+            Bespoke interior design & luxury execution. Where sophistication meets functionality. 
           </p>
 
           {/* CTAs */}
@@ -54,18 +53,21 @@ export default function IskoInteriorHero() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-6 md:gap-12 mt-20 pt-12 border-t border-white/20">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-serif text-red-600 mb-2">30+</div>
-              <div className="text-xs md:text-sm text-gray-300 uppercase tracking-wider">Projects Done</div>
+          <div className="grid grid-cols-3 gap-6 md:gap-16 mt-24 pt-16 border-t border-white/10">
+            <div className="text-center group">
+              <div className="text-5xl md:text-6xl font-serif text-red-600 mb-3 font-light">30+</div>
+              <div className="text-xs md:text-sm text-gray-400 uppercase tracking-widest font-light">Premium Projects</div>
+              <p className="text-xs text-gray-500 mt-2 group-hover:text-gray-300 transition-colors">Completed Homes</p>
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-serif text-red-600 mb-2">5</div>
-              <div className="text-xs md:text-sm text-gray-300 uppercase tracking-wider">Years Experience</div>
+            <div className="text-center group">
+              <div className="text-5xl md:text-6xl font-serif text-red-600 mb-3 font-light">5+</div>
+              <div className="text-xs md:text-sm text-gray-400 uppercase tracking-widest font-light">Years Crafting</div>
+              <p className="text-xs text-gray-500 mt-2 group-hover:text-gray-300 transition-colors">Exceptional Spaces</p>
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-serif text-red-600 mb-2">100%</div>
-              <div className="text-xs md:text-sm text-gray-300 uppercase tracking-wider">Client Satisfaction</div>
+            <div className="text-center group">
+              <div className="text-5xl md:text-6xl font-serif text-red-600 mb-3 font-light">500+</div>
+              <div className="text-xs md:text-sm text-gray-400 uppercase tracking-widest font-light">Happy Clients</div>
+              <p className="text-xs text-gray-500 mt-2 group-hover:text-gray-300 transition-colors">Trusted Partners</p>
             </div>
           </div>
         </div>

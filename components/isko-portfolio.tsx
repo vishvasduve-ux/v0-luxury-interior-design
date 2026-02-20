@@ -19,17 +19,17 @@ export default function IskoPortfolio() {
     <section id="portfolio" className="py-20 md:py-32 px-6 md:px-12 lg:px-20 bg-background">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-12 h-px bg-red-600" />
-            <span className="text-red-600 text-sm uppercase tracking-[0.3em] font-medium">Portfolio</span>
-            <div className="w-12 h-px bg-red-600" />
+        <div className="text-center mb-20">
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div className="w-16 h-px bg-gradient-to-r from-transparent via-red-600 to-transparent" />
+            <span className="text-red-600 text-xs uppercase tracking-[0.25em] font-light">Portfolio</span>
+            <div className="w-16 h-px bg-gradient-to-r from-transparent via-red-600 to-transparent" />
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground mb-6">
-            Our Design Showcase
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-foreground mb-6 font-light tracking-tight">
+            Design Masterpieces
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Explore our latest interior design projects and get inspired for your space
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-light leading-relaxed">
+            Curated collection of our finest projects showcasing innovation, elegance, and exceptional craftsmanship.
           </p>
         </div>
 
@@ -55,17 +55,17 @@ export default function IskoPortfolio() {
           {portfolios.map((item) => (
             <div
               key={item.id}
-              className="group relative overflow-hidden rounded-2xl bg-card border border-border hover:border-red-600/50 transition-all duration-500 cursor-pointer"
+              className="group relative overflow-hidden rounded-3xl bg-card border border-border/20 hover:border-red-600/20 transition-all duration-700 cursor-pointer"
             >
               {/* Image */}
-              <div className="relative h-96 overflow-hidden">
+              <div className="relative h-96 overflow-hidden bg-secondary">
                 <Image
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/20 transition-colors duration-500" />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
               </div>
 
               {/* Overlay */}
@@ -81,8 +81,8 @@ export default function IskoPortfolio() {
               </div>
 
               {/* Badge */}
-              <div className="absolute top-4 left-4">
-                <span className="px-4 py-1.5 bg-background/80 backdrop-blur-sm text-xs font-medium text-red-600 rounded-full">
+              <div className="absolute top-6 left-6 z-20">
+                <span className="px-5 py-2 bg-background/90 backdrop-blur-md text-xs font-light text-red-600 rounded-full border border-red-600/20">
                   {item.category}
                 </span>
               </div>

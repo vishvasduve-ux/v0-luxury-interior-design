@@ -30,34 +30,34 @@ export default function IskoPricing() {
     <section id="pricing" className="py-20 md:py-32 px-6 md:px-12 lg:px-20 bg-background">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-12 h-px bg-red-600" />
-            <span className="text-red-600 text-sm uppercase tracking-[0.3em] font-medium">Pricing</span>
-            <div className="w-12 h-px bg-red-600" />
+        <div className="text-center mb-20">
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div className="w-16 h-px bg-gradient-to-r from-transparent via-red-600 to-transparent" />
+            <span className="text-red-600 text-xs uppercase tracking-[0.25em] font-light">Investment</span>
+            <div className="w-16 h-px bg-gradient-to-r from-transparent via-red-600 to-transparent" />
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground mb-6">
-            Designs for Every Budget
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-foreground mb-6 font-light tracking-tight">
+            Premium Pricing
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Transparent pricing with no hidden costs. All prices include design, execution, and warranty
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-light leading-relaxed">
+            Transparent investment with no surprises. Every rupee delivers exceptional design and uncompromising quality.
           </p>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative p-8 rounded-2xl border transition-all duration-300 ${
+              className={`group relative p-10 rounded-3xl border transition-all duration-500 ${
                 plan.featured
-                  ? 'bg-red-600/5 border-red-600 ring-2 ring-red-600 ring-offset-2 ring-offset-background scale-105'
-                  : 'bg-card border-border hover:border-red-600/50'
+                  ? 'bg-gradient-to-br from-red-600/10 to-background border-red-600/30 ring-2 ring-red-600/20 ring-offset-2 ring-offset-background md:scale-105 shadow-2xl'
+                  : 'bg-card border-border/20 hover:border-red-600/30 hover:-translate-y-2'
               }`}
             >
               {/* Featured Badge */}
               {plan.featured && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2">
                   <span className="px-4 py-1 bg-red-600 text-white text-xs font-semibold rounded-full">
                     Most Popular
                   </span>
