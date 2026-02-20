@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button"
 
 const navLinks = [
   { href: "#home", label: "Home" },
-  { href: "#services", label: "Services" },
-  { href: "#projects", label: "Projects" },
-  { href: "#about", label: "About" },
+  { href: "#amenities", label: "Amenities" },
+  { href: "#pricing", label: "Pricing" },
+  { href: "#community", label: "Community" },
   { href: "#contact", label: "Contact" },
 ]
 
@@ -38,11 +38,11 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 bg-red-600 rounded-sm flex items-center justify-center">
-              <span className="text-white font-serif text-xl font-bold">IW</span>
+              <span className="text-white font-serif text-lg font-bold">IS</span>
             </div>
             <div className="hidden sm:block">
-              <span className="text-foreground font-serif text-xl tracking-wide">Interior</span>
-              <span className="text-red-600 font-serif text-xl tracking-wide ml-1">Workers</span>
+              <span className="text-foreground font-serif text-base tracking-wide font-semibold">ISKO</span>
+              <span className="text-red-600 font-serif text-xs tracking-widest">LIVE SPACE</span>
             </div>
           </Link>
 
@@ -52,7 +52,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors duration-300"
+                className="text-sm uppercase tracking-widest text-muted-foreground hover:text-red-600 transition-colors duration-300"
               >
                 {link.label}
               </Link>
@@ -61,12 +61,12 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:9887726552" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            <a href="tel:9887726552" className="flex items-center gap-2 text-muted-foreground hover:text-red-600 transition-colors">
               <Phone className="w-4 h-4" />
               <span className="text-sm">9887726552</span>
             </a>
-            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <a href="#contact">Book Free Visit</a>
+            <Button asChild className="bg-red-600 hover:bg-red-500 text-white">
+              <a href="#contact">Book Tour</a>
             </Button>
           </div>
 
@@ -92,18 +92,18 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-sm uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors py-2"
+                className="text-sm uppercase tracking-widest text-muted-foreground hover:text-red-600 transition-colors py-2"
               >
                 {link.label}
               </Link>
             ))}
             <div className="flex flex-col gap-3 pt-4">
-              <a href="tel:9887726552" className="flex items-center gap-2 text-primary">
+              <a href="tel:9887726552" className="flex items-center gap-2 text-red-600">
                 <Phone className="w-4 h-4" />
                 <span>9887726552</span>
               </a>
-              <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                <a href="#contact">Book Free Visit</a>
+              <Button asChild className="w-full bg-red-600 hover:bg-red-500 text-white">
+                <a href="#contact">Book Tour</a>
               </Button>
             </div>
           </nav>

@@ -3,19 +3,19 @@ import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react"
 
 const quickLinks = [
   { href: "#home", label: "Home" },
-  { href: "#services", label: "Services" },
-  { href: "#projects", label: "Projects" },
-  { href: "#about", label: "About Us" },
+  { href: "#amenities", label: "Amenities" },
+  { href: "#pricing", label: "Pricing" },
+  { href: "#community", label: "Community" },
   { href: "#contact", label: "Contact" },
 ]
 
-const services = [
-  "Turnkey Interior Execution",
-  "Civil & Masonry Work",
-  "False Ceiling",
-  "Glass Partition",
-  "Electrical & Lighting",
-  "Furniture Work",
+const plans = [
+  "Hot Desk",
+  "Dedicated Desk",
+  "Private Office",
+  "Meeting Rooms",
+  "Event Space",
+  "Day Pass",
 ]
 
 export default function Footer() {
@@ -28,16 +28,16 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-red-600 rounded-sm flex items-center justify-center">
-                <span className="text-white font-serif text-xl font-bold">IW</span>
+                <span className="text-white font-serif text-lg font-bold">IS</span>
               </div>
               <div>
-                <span className="text-foreground font-serif text-xl tracking-wide">Interior</span>
-                <span className="text-red-600 font-serif text-xl tracking-wide ml-1">Workers</span>
+                <span className="text-foreground font-serif text-base tracking-wide font-semibold">ISKO</span>
+                <span className="text-red-600 font-serif text-xs tracking-widest">LIVE SPACE</span>
               </div>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Premium commercial interior design and turnkey execution in Jaipur. 
-              Transforming workspaces into inspiring environments since 2014.
+              Jaipur's premier coworking community for entrepreneurs, freelancers, and teams.
+              Join 500+ professionals in a vibrant, collaborative workspace.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -79,13 +79,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Membership Plans */}
           <div>
-            <h4 className="text-foreground font-semibold mb-6">Our Services</h4>
+            <h4 className="text-foreground font-semibold mb-6">Membership Plans</h4>
             <ul className="space-y-3">
-              {services.map((service) => (
-                <li key={service}>
-                  <span className="text-muted-foreground text-sm">{service}</span>
+              {plans.map((plan) => (
+                <li key={plan}>
+                  <span className="text-muted-foreground text-sm">{plan}</span>
                 </li>
               ))}
             </ul>
@@ -102,16 +102,16 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@interiorworkers.com" className="flex items-start gap-3 text-muted-foreground hover:text-red-600 transition-colors">
+                <a href="mailto:info@iskolvespace.com" className="flex items-start gap-3 text-muted-foreground hover:text-red-600 transition-colors">
                   <Mail className="w-5 h-5 mt-0.5 text-red-600" />
-                  <span className="text-sm break-all">info@interiorworkers.com</span>
+                  <span className="text-sm break-all">info@iskolvespace.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 mt-0.5 text-red-600 flex-shrink-0" />
                 <span className="text-sm">
-                  Bella Vista, Partkar Colony<br />
-                  Mansarovar, Jaipur, Rajasthan
+                  Jaipur, Rajasthan<br />
+                  India 302020
                 </span>
               </li>
             </ul>
@@ -123,8 +123,8 @@ export default function Footer() {
       <div className="border-t border-border">
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} Interior Workers. All rights reserved.</p>
-            <p>Premium Interior Design & Execution in Jaipur</p>
+            <p>© {new Date().getFullYear()} ISKO LIVE SPACE. All rights reserved.</p>
+            <p>Jaipur's Premier Coworking Community</p>
           </div>
         </div>
       </div>

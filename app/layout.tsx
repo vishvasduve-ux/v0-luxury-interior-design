@@ -15,10 +15,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Interior Workers | Premium Commercial Interior Design & Turnkey Execution in Jaipur',
-  description: 'Transform your workspace with Interior Workers - Jaipur\'s leading commercial interior design and turnkey execution company. Corporate offices, coworking spaces, and premium commercial interiors.',
-  keywords: 'interior design jaipur, commercial interior, office interior, turnkey execution, corporate office design, coworking space design, false ceiling, glass partition, modular furniture',
-  generator: 'Interior Workers',
+  title: 'ISKO LIVE SPACE | Premium Coworking Space in Jaipur',
+  description: 'ISKO LIVE SPACE - Jaipur\'s premium coworking community for entrepreneurs, freelancers, and teams. Flexible workspaces, modern amenities, networking events, and collaborative environment.',
+  keywords: 'coworking space jaipur, shared office, workspace rental, startup office, freelancer workspace, flexible workspace, business address, meeting room',
+  generator: 'ISKO LIVE SPACE',
   icons: {
     icon: [
       {
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png',
   },
   openGraph: {
-    title: 'Interior Workers | Premium Commercial Interior Design in Jaipur',
-    description: 'From concept to completion — offices that inspire productivity. Turnkey interior execution for corporate offices and commercial spaces.',
+    title: 'ISKO LIVE SPACE | Premium Coworking Community',
+    description: 'Join Jaipur\'s most vibrant coworking community. Flexible workspace, high-speed internet, premium amenities, and networking opportunities.',
     type: 'website',
   },
 }
 
 export const viewport: Viewport = {
-  themeColor: '#1a1a1f',
+  themeColor: '#231f20',
   width: 'device-width',
   initialScale: 1,
 }
